@@ -1,4 +1,6 @@
-const API_BASE = "";
+const API_BASE = (
+  import.meta.env.VITE_API_URL || (import.meta.env.DEV ? "" : "https://future-fs-02-do3z.onrender.com")
+).replace(/\/$/, "");
 
 export async function apiRequest(path, options = {}) {
   const token = localStorage.getItem("miniCrmToken");
