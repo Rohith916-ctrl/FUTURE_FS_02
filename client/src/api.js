@@ -1,5 +1,5 @@
 const API_BASE = (
-  import.meta.env.VITE_API_URL || (import.meta.env.DEV ? "" : "https://future-fs-02-do3z.onrender.com")
+  import.meta.env.VITE_API_URL || (import.meta.env.DEV ? "" : "https://future-fs-02-l8bb.onrender.com")
 ).replace(/\/$/, "");
 
 export async function apiRequest(path, options = {}) {
